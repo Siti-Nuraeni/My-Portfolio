@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siti Nuraeni — Portfolio</title>
+  <meta name="description" content="Image-first portfolio website for Siti Nuraeni with Apple-style editorial scrolling." />
+  <meta name="theme-color" content="#f6f4ef" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">Siti Nuraeni</a>
+      <nav class="nav">
+        <a href="#intro">Intro</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="progress-rail" id="progressRail"></div>
+
+  <main id="top">
+    <section class="intro" id="intro">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Instructional Design · Quality Assurance · Learning Impact</p>
+          <h1>
+            Let the
+            <span class="serif">portfolio pages</span>
+            do the talking.
+          </h1>
+          <p class="intro-text">
+            This version is intentionally built around your exported PNG pages. The layout is quieter,
+            cleaner, and more focused so visitors spend their attention on the actual work, not on extra decoration.
+          </p>
+          <div class="intro-actions">
+            <a href="#portfolio" class="button button-solid">Start exploring</a>
+            <a href="#contact" class="button button-ghost">Contact</a>
+          </div>
+        </div>
+
+        <div class="intro-stage reveal">
+          <div class="stage-card stage-back">
+            <img src="assets/pages/page-08.png" alt="Portfolio preview page 08" onerror="this.style.display='none'">
+          </div>
+          <div class="stage-card stage-front">
+            <img src="assets/pages/page-03.png" alt="Portfolio preview page 03" onerror="this.style.display='none'">
+            <div class="stage-fallback">
+              <strong>Add PNG pages into <code>assets/pages/</code></strong>
+              <span>Use names: page-01.png to page-13.png</span>
+            </div>
+          </div>
+          <div class="stage-card stage-float">
+            <img src="assets/pages/page-09.png" alt="Portfolio preview page 09" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container portfolio-head reveal">
+        <p class="eyebrow">Portfolio Experience</p>
+        <h2>A more focused scroll — built to spotlight the PNGs.</h2>
+        <p>
+          The strongest pages in your PDF are the ones that already contain screenshots, frameworks, outputs,
+          and evidence. So this layout keeps the copy short and gives those pages a larger, more immersive stage.
+        </p>
+      </div>
+
+      <div class="story-list" id="storyList"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container reveal">
+        <div class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2>Thoughtful learning design, presented with more focus and clarity.</h2>
+          <p>
+            This section stays minimal on purpose, so the site closes cleanly after the visual portfolio stream.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sitinuraenieny@gmail.com">sitinuraenieny@gmail.com</a>
+            <a href="https://www.linkedin.com/in/sitinuraeni777" target="_blank" rel="noreferrer">linkedin.com/in/sitinuraeni777</a>
+            <a href="tel:+6285601717217">+62 856 0171 7217</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+    <img id="lightboxImage" alt="Portfolio page preview" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
